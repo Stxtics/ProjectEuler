@@ -10,11 +10,9 @@ public class Problem21 {
     public static void main (String[] args) {
         getDivisorsSum();
         getAmicableNumbers();
-        System.out.println(amicableNumbers);
         Set<Integer> set = new HashSet<>(amicableNumbers);
         amicableNumbers.clear();
         amicableNumbers.addAll(set);
-        System.out.println(amicableNumbers);
         System.out.println(sumAmicableNumbers());
     }
 
