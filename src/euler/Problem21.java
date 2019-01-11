@@ -7,7 +7,8 @@ import java.util.Set;
 public class Problem21 {
     private static ArrayList<Integer> amicableNumbers = new ArrayList<>();
     private static ArrayList<Integer> divisorsSum = new ArrayList<>();
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         getDivisorsSum();
         getAmicableNumbers();
         Set<Integer> set = new HashSet<>(amicableNumbers);
@@ -21,7 +22,7 @@ public class Problem21 {
         divisorsSum.add(0);
         for (int i = 2; i < 10000; i++) {
             sum = 0;
-            for (int j = 1; j < i/2 + 1; j++) {
+            for (int j = 1; j < i / 2 + 1; j++) {
                 if (i % j == 0) {
                     sum += j;
                 }
